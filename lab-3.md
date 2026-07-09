@@ -136,7 +136,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/new/g10.png)
 
-1. On the Create a new connection window, under **Browse (1)** tab select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)** from the dropdown. Select **Microsoft Entra ID (3)** as Auth type and click on **Connect (4)**.
+1. On the Create a new connection window, under **Browse (1)** tab select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)** from the dropdown. Select **API Key (3)** as Auth type and click on **Connect (4)**.
 
    ![](./media/search-conn-3001.png)
 
@@ -165,7 +165,7 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/new/h2.png)
 
-1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4.1 model.
+1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-5.4 model.
 
    ![](./media/new/h3.png)
 
@@ -175,11 +175,11 @@ In this task, you will build an AI Agent using **Retrieval-Augmented Generation 
 
    ![](./media/new/h5.png)
 
-1. Run the next cell to define a search agent that utilizes Azure AI Search and the GPT-4.1 model to retrieve relevant health plan documents.
+1. Run the next cell to define a search agent that utilizes Azure AI Search and the GPT-5.4 model to retrieve relevant health plan documents. It will get the values for GPT model dynamically via env variables.
 
    ![](./media/new/h6.png)
 
-1. Run the next cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-4.1. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
+1. Run the next cell to chat with the search agent and retrieve details about the Northwind Standard health plan using Azure AI Search and GPT-5.4. This script initiates a conversation, queries the agent for health plan information, and displays the agent’s response.
 
    ![](./media/new/h7.png)
    
@@ -196,7 +196,7 @@ In this lab, you accomplished the following:
 - Created and configured an Azure AI Search index using blob data from a Storage Account
 - Uploaded and indexed health plan documents for vector-based retrieval
 - Configured Azure AI Search integration with Microsoft Foundry using managed identity authentication
-- Created and connected a RAG-enabled AI Agent using Azure AI Search and GPT-4.1
+- Created and connected a RAG-enabled AI Agent using Azure AI Search and GPT-5.4
 - Queried health plan documents using the AI Agent to generate context-aware responses
 - Demonstrated Retrieval-Augmented Generation (RAG) for accurate document-based AI responses
 

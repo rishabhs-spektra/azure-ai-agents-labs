@@ -48,6 +48,8 @@ In this task, you will build a simple AI Agent that processes data and generates
 
    ![](./media/new/f11.png)
 
+   > **Note:** The following image is an example of the expected output. The appearance, including the colours, may vary depending on your environment.
+
 ## 🧾 Summary
 
 In this lab, you accomplished the following:

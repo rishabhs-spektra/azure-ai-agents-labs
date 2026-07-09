@@ -41,11 +41,11 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/new/h1.png)
 
-1. Run the first cell to develop a **multi-agent system** that integrates Azure AI Search, GPT-4.1, and Semantic Kernel for intelligent task execution. This setup enables multiple AI agents to collaborate on retrieving information, generating responses, and handling complex queries.
+1. Run the first cell to develop a **multi-agent system** that integrates Azure AI Search, GPT-5.4, and Semantic Kernel for intelligent task execution. This setup enables multiple AI agents to collaborate on retrieving information, generating responses, and handling complex queries.
 
    ![](./media/new/j2.png)
 
-1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-4.1 model.
+1. Run the next cell to connect to your Microsoft Foundry project and access the deployed GPT-5.4 model.
 
    ![](./media/new/j3.png)
 
@@ -55,11 +55,11 @@ In this task, you will create the Search, Report, and Validation Agents to retri
 
    ![](./media/new/j5.png)
 
-1. Run the next cell to create the **Search Agent**, which retrieves health plan details from Azure AI Search using GPT-4.1. This agent enables efficient retrieval of structured information from health plan documents.
+1. Run the next cell to create the **Search Agent**, which retrieves health plan details from Azure AI Search using GPT-5.4. This agent enables efficient retrieval of structured information from health plan documents.
 
    ![](./media/new/j6a.png)
 
-1. Run the next cell to create the **Report Agent**, which generates detailed reports on health plans using GPT-4.1. This agent enhances documentation by providing structured insights, coverage details, and exclusions for various plans.
+1. Run the next cell to create the **Report Agent**, which generates detailed reports on health plans using GPT-5.4. This agent enhances documentation by providing structured insights, coverage details, and exclusions for various plans.
 
    ![](./media/new/j7.png)
 
@@ -148,10 +148,31 @@ In this lab, you accomplished the following:
 - Built a multi-agent system using Microsoft Foundry and Semantic Kernel
 - Created specialized AI agents: Search Agent, Report Agent, and Validation Agent
 - Connected agents to Azure AI Search to retrieve health plan policy information
-- Generated structured health plan reports using GPT-4.1
+- Generated structured health plan reports using GPT-5.4
 - Validated generated reports for required compliance details, including exclusions
 - Executed the multi-agent workflow for multiple health plans and reviewed generated outputs
 - Verified end-to-end orchestration of agents working together to produce accurate reports
+
+## 🔗 Reference Links
+
+- Azure AI Agent Service:
+https://learn.microsoft.com/azure/ai-services/agents/overview
+
+- Microsoft Foundry:
+https://learn.microsoft.com/azure/ai-foundry/what-is-azure-ai-foundry
+
+- Azure AI Search:
+https://learn.microsoft.com/azure/search/search-what-is-azure-search
+
+- Semantic Kernel:
+https://learn.microsoft.com/semantic-kernel/overview/
+
+- Azure AI Agents Python SDK:
+https://learn.microsoft.com/python/api/overview/azure/ai-agents-readme?view=azure-python
+
+- Azure Identity for authentication :
+https://learn.microsoft.com/python/api/overview/azure/identity-readme?view=azure-python
+
 
 ## 🎉 You have successfully completed the Hands-on lab!
 

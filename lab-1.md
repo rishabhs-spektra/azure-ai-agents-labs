@@ -62,6 +62,8 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
 1. Under **Job function roles**, search for **Foundry User (1)**, select **Foundry User (2)**, and then select **Next (3)**.
 
+   >**Foundry User:** Grants users permission to access Azure AI Foundry projects and interact with deployed AI models, agents, and other project resources required to complete the lab.
+
    ![](./media/new/foundry-user-select.png)
 
 1. On the **Add role assignment** page, 
@@ -108,19 +110,23 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Deployments (2)** from left pane and select **Deploy a base model (3)**.
+1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Models (2)** from left pane and click on **Deploy (3)** dropdown and select **Deploy a base model (4)**.
 
     ![](./media/new/L1T2S1-1.png)
 
-1. In the **Models** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)** from the results.
+1. In the **Models** page, search for **gpt-5.4 (1)** and select **gpt-5.4 (2)** from the results.
+
+   > **GPT-5.4** offers enhanced reasoning and instruction-following capabilities for building intelligent AI applications.
+   
+   >It is optimized for AI agent scenarios, enabling more accurate, context-aware, and reliable responses across a wide range of business tasks.
 
     ![](./media/new/a1.png)
 
-1. In the **gpt-4.1** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
+1. In the **gpt-5.4** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
 
     ![](./media/new/a2.png)
 
-1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Deploy (2)**.
+1. On the **Deploy gpt-5.4** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Deploy (2)**.
 
       ![](./media/new/a3-1.png)
 
@@ -128,17 +134,20 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
-1. After deployment, select **Deployments (1)** from left navigation pane and select the **gpt-4.1 (2)** model.
+1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-5.4 (2)** model.
 
    ![](./media/new/a4-1.png)
 
-1. Under **gpt-4.1**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
+1. Under **gpt-5.4**, select the **Details (1)** tab from top and copy the **Endpoint (2)** and save it in **Notepad** for later use.
 
    ![](./media/new/L1T2S6.png)
 
-1. From the left navigation pane, click **Deployments (1)** and select **Deploy a base model (2)**.
+1. From the left navigation pane, click **Models (1)** and click on **Deploy (2)** and select **Deploy a base model (3)**.
 
    ![](./media/new/L1T2S7-1.png)
+
+   > **Note:** **text-embedding-3-large** generates high-quality vector representations of text for **semantic search** and **knowledge retrieval**.
+   It is optimized for **AI-powered search and Retrieval-Augmented Generation (RAG)** scenarios, enabling applications to retrieve relevant information from custom knowledge bases and provide more accurate, context-aware responses.
 
 1. In the **Models** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
 
@@ -148,7 +157,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/18.png)
 
-1. From the left navigation pane, click **Deployments (1)** and ensure both the **Models (2)** are deployed successfully.
+1. From the left navigation pane, click **Models (1)** and ensure both the **Models (2)** are deployed successfully.
 
    ![](./media/new/L1T2S10-1.png)
 
@@ -208,6 +217,7 @@ Before assigning the required roles, it is important to understand how these per
    >**Note**: The deployment may take around **10 - 12 minutes**, depending on Azure’s provisioning time for the AI Search service.
 
 1. In the Search Service, expand **Security + networking (1)** and select **Identity (2)** under the  section. Under **System assigned**, set the status to **On (3)** and click **Save (4)**.
+   > **System-assigned identity:** Automatically creates and manages an identity for the Azure resource, allowing it to securely authenticate with other Azure services without storing credentials.
 
    ![](./media/new/w2.png)
 
@@ -261,6 +271,8 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Under **Job function roles**, search for **Storage Blob Data Reader (1)**, select **Storage Blob Data Reader (2)**, and then select **Next (3)**.
 
+   > **Storage Blob Data Reader**: Grants read-only access to blobs and containers in Azure Storage, allowing applications and AI services to securely access stored data without modifying it.
+
    ![](./media/blbdr.png)
 
 1. On the **Add role assignment** page, 
@@ -291,6 +303,8 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Under **Job function roles**, search for **Search Index Data Reader (1)**, select **Search Index Data Reader (2)**, and then select **Next (3)**.
 
+   > **Search Index Data Reader:** Grants read-only access to search indexes in AI Search, allowing applications and AI services to securely retrieve indexed content without modifying the index.
+
    ![](./media/new/w10.png)
 
 1. On the **Add role assignment** page, 
@@ -312,6 +326,8 @@ Before assigning the required roles, it is important to understand how these per
    ![](./media/new/w9.png)
 
 1. Under **Job function roles**, search for **Search Service Contributor (1)**, select **Search Service Contributor (2)**, and then select **Next (3)**.
+
+   > **Search Service Contributor:** Grants permission to create, manage, and update Azure AI Search resources, including indexes, indexers, data sources, and skillsets.
 
    ![](./media/new/e3.png)
 
@@ -343,6 +359,8 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Under **Job function roles**, search for **Foundry Project Manager (1)**, select **Foundry Project Manager (2)**, and then select **Next (3)**.
 
+   > **Foundry Project Manager:** Grants permission to create, manage, and configure Azure AI Foundry projects, enabling users to manage project resources, agents, connections, and related assets.
+
    ![](./media/new/foundry-project-manager-select.png)
 
 1. On the **Add role assignment** page, 
@@ -361,6 +379,8 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Follow steps from **31** to **34**, and assign the **Cognitive Services OpenAI Contributor** role to the **ODL_User <inject key="Deployment ID" enableCopy="false"></inject>**.
 
+   > **Cognitive Services OpenAI Contributor:** Grants permission to create, manage, and deploy Azure OpenAI resources, including models, deployments, and related configurations.
+
    ![](./media/new/f4.png)
 
 1. In the Foundry service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
@@ -368,6 +388,8 @@ Before assigning the required roles, it is important to understand how these per
    ![](./media/new/e7.png)
 
 1. Under **Job function roles**, search for **Cognitive Services OpenAI User (1)**, select **Cognitive Services OpenAI User (2)**, and then select **Next (3)**.
+
+   > **Cognitive Services OpenAI User:** Grants permission to access and use Azure OpenAI models and deployments, allowing applications and users to generate AI-powered responses without managing the resource.
 
    ![](./media/aranxt.png)
 
@@ -477,9 +499,9 @@ In this task, you will install the required dependencies, configure a virtual en
 1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Microsoft Foundry project:
 
    - `AIPROJECT_ENDPOINT`: Provide the **Project endpoint** value you have copied in Step 14 of Task 1.
-   - `API_KEY`: Provide the **Key** value of the **gpt-4.1** model you have copied in Step 14 of Task 1.
-   - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4.1** model you have copied in Step 6 of Task 2.
-   - `CHAT_MODEL`: **gpt-4.1**
+   - `API_KEY`: Provide the **Key** value of the **gpt-5.4** model you have copied in Step 14 of Task 1.
+   - `CHAT_MODEL_ENDPOINT`: Provide the **Endpoint** of the **gpt-5.4** model you have copied in Step 6 of Task 2.
+   - `CHAT_MODEL`: **gpt-5.4**
 
      ![](./media/new/r3.png)
 
@@ -521,7 +543,7 @@ In this task, you will install the required dependencies, configure a virtual en
 
    ![](./media/new/r7.png)
 
-1. Run the next cell to interact with the GPT-4.1 model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
+1. Run the next cell to interact with the GPT-5.4 model using your Microsoft Foundry project. This code initializes a chat client, sends a request for a joke about a teddy bear, and prints the response. Finally, see the output provided from the chat model.
 
    ![](./media/new/27.png)
 
@@ -534,7 +556,7 @@ In this task, you will install the required dependencies, configure a virtual en
 In this lab, you accomplished the following:
 
 - Created and configured a Microsoft Foundry resource and AI Project
-- Deployed the `gpt-4.1` and `text-embedding-3-large` models in Microsoft Foundry
+- Deployed the `gpt-5.4` and `text-embedding-3-large` models in Microsoft Foundry
 - Created and configured an Azure AI Search service and enabled managed identities
 - Assigned the necessary roles and permissions for Microsoft Foundry and Azure AI Search integration
 - Configured Visual Studio Code with a Python virtual environment and installed the required dependencies

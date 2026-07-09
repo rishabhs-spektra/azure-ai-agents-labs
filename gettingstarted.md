@@ -10,7 +10,7 @@ As part of the AI modernization initiative, Contoso’s engineering team will us
 
 ## 📖 Lab Overview
 
-This hands-on lab offers a comprehensive introduction to building **AI agents** using the **Azure AI Agent Service SDK**. You will begin by creating AI agents with the Azure AI Agent Service and orchestrate them in a multi-agent system. Throughout the lab, you will explore techniques for agent collaboration, automation, and task execution. By the end of this experience, you will have hands-on expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
+This hands-on lab provides a practical introduction to building **AI agents** using the **Azure AI Agent Service SDK**. You will begin by creating **AI agents** with Azure AI Agent Service and, in later stages, orchestrate them in a multi-agent system. Throughout the experience, you will explore agent collaboration, automation, and task execution using **Azure AI Agent Service** as the primary implementation framework, with **Semantic Kernel** added for orchestration in the multi-agent scenario. By the end of this experience, you will have hands-on expertise in designing, deploying, and managing AI agents to build intelligent, scalable, and efficient AI-driven applications.
 
 ## 🎯 Objectives
 
@@ -104,6 +104,12 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 ![](./media/GS1.png)  
 
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+   ![](./media/slider.png)
+
 ## ☁️ Let's Get Started with Azure Portal
  
 1. In the Lab-VM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
@@ -116,7 +122,7 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
  
      ![Enter Your Username](./media/gt-5.png)
  
-1. Next, provide your password:
+1. Next, provide your Temporary Access Pass:
  
    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
